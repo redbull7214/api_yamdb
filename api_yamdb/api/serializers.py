@@ -2,7 +2,6 @@ from django.core.exceptions import ValidationError
 from rest_framework import serializers
 from rest_framework.generics import get_object_or_404
 from rest_framework.validators import UniqueValidator
-import re
 from api_yamdb import settings
 from reviews.models import Category, Genre, Title, Review, Comments, User
 from reviews.validators import validate_score, validate_year, validate_username
